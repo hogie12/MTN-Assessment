@@ -3,7 +3,7 @@ import { Card, Button } from "react-bootstrap";
 
 export default function PostCard({ tittle, body }) {
   return (
-    <Card >
+    <Card style={{ width: '18rem' }}>
       <Card.Body>
         <Card.Title>{tittle}</Card.Title>
         <Card.Text>
