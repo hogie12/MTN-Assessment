@@ -18,8 +18,10 @@ function App() {
   }, [])
 
   return (
-    <Container className="App pt-5 d-flex">
-      <PostCard tittle="test tittle" body="test body"/>
+    <Container className="App pt-5 d-flex flex-wrap justify-content-center">
+      {post.map((data) => (
+        <PostCard tittle={data.title} body={data.body}/>
+      ))}
     </Container>
   );
 }
